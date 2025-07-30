@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-6 md:py-8">
         <div className="text-center">
           <div className="flex items-center justify-center space-x-2 mb-3 group">
-            <img src="/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8 group-hover:scale-110 transition-transform duration-300" />
+            <img src="cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8 group-hover:scale-110 transition-transform duration-300" />
             <span className="text-lg md:text-xl font-serif font-bold text-amber-800 group-hover:text-amber-900 transition-colors duration-300">
               Sand Lake Lodge
             </span>

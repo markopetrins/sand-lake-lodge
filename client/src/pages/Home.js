@@ -68,7 +68,7 @@ const Home = () => {
           >
             <div className="mb-6 md:mb-8">
               <div className="inline-block p-2 md:p-3 bg-amber-50/60 backdrop-blur-sm rounded-full mb-3 md:mb-4">
-                <img src="/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
+                <img src="cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-3 md:mb-4 text-white drop-shadow-2xl leading-tight">
                 Sand Lake Lodge
@@ -140,7 +140,7 @@ const Home = () => {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-amber-200 to-amber-300 relative">
                 <img 
-                  src="/images/page/beach2.jpg" 
+                  src="images/page/beach2.jpg" 
                   alt="Lakeside living" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -161,7 +161,7 @@ const Home = () => {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-amber-200 to-amber-300 relative">
                 <img 
-                  src="/images/page/kayak.jpg" 
+                  src="images/page/kayak.jpg" 
                   alt="Water adventures" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -182,7 +182,7 @@ const Home = () => {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-amber-200 to-amber-300 relative">
                 <img 
-                  src="/images/page/fire.jpg" 
+                  src="images/page/fire.jpg" 
                   alt="Cozy evenings" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />

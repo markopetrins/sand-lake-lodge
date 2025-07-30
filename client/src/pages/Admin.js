@@ -469,7 +469,7 @@ const Admin = () => {
           >
             <div className="text-center mb-8">
               <div className="inline-block p-3 bg-amber-50 rounded-full mb-4">
-                <img src="/cabin_icon.png" alt="Sand Lake Lodge" className="w-8 h-8" />
+                <img src="cabin_icon.png" alt="Sand Lake Lodge" className="w-8 h-8" />
               </div>
               <h1 className="text-2xl font-serif font-bold text-amber-900 mb-2">
                 Admin Login
@@ -562,7 +562,7 @@ const Admin = () => {
       <section className="relative py-12 md:py-16 flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
-            src="/images/hero/kitchen.jpg" 
+            src="images/hero/kitchen.jpg" 
             alt="Sand Lake Lodge Admin" 
             className="w-full h-full object-cover"
           />
@@ -576,7 +576,7 @@ const Admin = () => {
           >
             <div className="mb-4 md:mb-6">
               <div className="inline-block p-2 md:p-3 bg-amber-50/60 backdrop-blur-sm rounded-full mb-3">
-                <img src="/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
+                <img src="cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-3 text-white drop-shadow-2xl leading-tight">
                 Booking Management
