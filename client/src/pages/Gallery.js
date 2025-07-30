@@ -9,28 +9,28 @@ const Gallery = () => {
     // Exterior & Patio
     { 
       id: 1, 
-      src: 'images/gallery/patio1.jpg', 
+      src: '/sand-lake-lodge/images/gallery/patio1.jpg', 
       title: 'Outdoor Patio', 
       description: 'Beautiful outdoor space perfect for dining and relaxation', 
       category: 'exterior' 
     },
     { 
       id: 2, 
-      src: 'images/gallery/patio2.jpg', 
+      src: '/sand-lake-lodge/images/gallery/patio2.jpg', 
       title: 'Patio with Lake Views', 
       description: 'Enjoy stunning lake views from our spacious patio', 
       category: 'exterior' 
     },
     { 
       id: 3, 
-      src: 'images/gallery/patio3.jpg', 
+      src: '/sand-lake-lodge/images/gallery/patio3.jpg', 
       title: 'Evening Patio', 
       description: 'Perfect spot for evening gatherings and stargazing', 
       category: 'exterior' 
     },
     { 
       id: 4, 
-      src: 'images/gallery/patio4.jpg', 
+      src: '/sand-lake-lodge/images/gallery/patio4.jpg', 
       title: 'Patio Seating', 
       description: 'Comfortable outdoor seating with lake breezes', 
       category: 'exterior' 
@@ -39,14 +39,14 @@ const Gallery = () => {
     // Interior - Living Areas
     { 
       id: 5, 
-      src: 'images/gallery/livingroom.jpg', 
+      src: '/sand-lake-lodge/images/gallery/livingroom.jpg', 
       title: 'Cozy Living Room', 
       description: 'Warm and inviting living space with lake views', 
       category: 'interior' 
     },
     { 
       id: 6, 
-      src: 'images/gallery/diningtable.jpg', 
+      src: '/sand-lake-lodge/images/gallery/diningtable.jpg', 
       title: 'Dining Area', 
       description: 'Perfect setting for family meals and gatherings', 
       category: 'interior' 
@@ -55,14 +55,14 @@ const Gallery = () => {
     // Playroom
     { 
       id: 7, 
-      src: 'images/gallery/playroom_1.jpg', 
+      src: '/sand-lake-lodge/images/gallery/playroom_1.jpg', 
       title: 'Family Playroom', 
       description: 'Dedicated space for kids to play, read, and have fun', 
       category: 'playroom' 
     },
     { 
       id: 8, 
-      src: 'images/gallery/playroom2.jpg', 
+      src: '/sand-lake-lodge/images/gallery/playroom2.jpg', 
       title: 'Kids Entertainment Area', 
       description: 'Perfect room for children to enjoy their own space', 
       category: 'playroom' 
@@ -71,14 +71,14 @@ const Gallery = () => {
     // Kitchen
     { 
       id: 9, 
-      src: 'images/gallery/kitchen.jpg', 
+      src: '/sand-lake-lodge/images/gallery/kitchen.jpg', 
       title: 'Fully Equipped Kitchen', 
       description: 'Everything you need to prepare delicious meals', 
       category: 'kitchen' 
     },
     { 
       id: 10, 
-      src: 'images/gallery/kitchen2.jpg', 
+      src: '/sand-lake-lodge/images/gallery/kitchen2.jpg', 
       title: 'Kitchen with Views', 
       description: 'Cook with beautiful lake views', 
       category: 'kitchen' 
@@ -87,28 +87,28 @@ const Gallery = () => {
     // Bedrooms
     { 
       id: 11, 
-      src: 'images/gallery/master.jpg', 
+      src: '/sand-lake-lodge/images/gallery/master.jpg', 
       title: 'Master Bedroom', 
       description: 'Comfortable master bedroom with lake views', 
       category: 'bedrooms' 
     },
     { 
       id: 12, 
-      src: 'images/gallery/bedroom2.jpg', 
+      src: '/sand-lake-lodge/images/gallery/bedroom2.jpg', 
       title: 'Guest Bedroom', 
       description: 'Cozy guest bedroom perfect for visitors', 
       category: 'bedrooms' 
     },
     { 
       id: 13, 
-      src: 'images/gallery/bedroom3.jpg', 
+      src: '/sand-lake-lodge/images/gallery/bedroom3.jpg', 
       title: 'Additional Bedroom', 
       description: 'Spacious bedroom for family or friends', 
       category: 'bedrooms' 
     },
     { 
       id: 14, 
-      src: 'images/gallery/bunkbedroom2.jpg', 
+      src: '/sand-lake-lodge/images/gallery/bunkbedroom2.jpg', 
       title: 'Bunk Bed Room', 
       description: 'Perfect for kids with fun bunk bed setup', 
       category: 'bedrooms' 
@@ -117,21 +117,21 @@ const Gallery = () => {
     // Bathrooms
     { 
       id: 15, 
-      src: 'images/gallery/bathroom.jpg', 
+      src: '/sand-lake-lodge/images/gallery/bathroom.jpg', 
       title: 'Main Bathroom', 
       description: 'Clean and modern bathroom facilities', 
       category: 'bathrooms' 
     },
     { 
       id: 16, 
-      src: 'images/gallery/bathroom2.jpg', 
+      src: '/sand-lake-lodge/images/gallery/bathroom2.jpg', 
       title: 'Additional Bathroom', 
       description: 'Convenient bathroom for guests', 
       category: 'bathrooms' 
     },
     { 
       id: 17, 
-      src: 'images/gallery/bathroom3.jpg', 
+      src: '/sand-lake-lodge/images/gallery/bathroom3.jpg', 
       title: 'Bathroom Detail', 
       description: 'Well-appointed bathroom with all amenities', 
       category: 'bathrooms' 
@@ -166,7 +166,7 @@ const Gallery = () => {
       <section className="relative py-12 md:py-16 flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
-            src="images/hero/bonfire.jpg" 
+            src="/sand-lake-lodge/images/hero/bonfire.jpg" 
             alt="Sand Lake Lodge Gallery" 
             className="w-full h-full object-cover"
           />
@@ -180,7 +180,7 @@ const Gallery = () => {
           >
                          <div className="mb-4 md:mb-6">
                <div className="inline-block p-2 md:p-3 bg-amber-50/60 backdrop-blur-sm rounded-full mb-3">
-                 <img src="cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
+                 <img src="/sand-lake-lodge/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
                </div>
                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-3 text-white drop-shadow-2xl leading-tight">
                  Photo Gallery

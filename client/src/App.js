@@ -14,7 +14,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 function App() {
   return (
     <ErrorBoundary>
-      <Router>
+      <Router basename="/sand-lake-lodge">
         <div className="App">
           <Navbar />
           <ScrollToTop />
