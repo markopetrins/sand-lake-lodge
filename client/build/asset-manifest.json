@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sand-lake-lodge/static/css/main.410e769b.css",
+    "main.js": "/sand-lake-lodge/static/js/main.e44ef50d.js",
+    "index.html": "/sand-lake-lodge/index.html",
+    "main.410e769b.css.map": "/sand-lake-lodge/static/css/main.410e769b.css.map",
+    "main.e44ef50d.js.map": "/sand-lake-lodge/static/js/main.e44ef50d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.410e769b.css",
+    "static/js/main.e44ef50d.js"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "bookings": [],
+  "settings": {
+    "cottageName": "Sand Lake Lodge",
+    "pricePerNight": 250,
+    "weekendPrice": 300,
+    "minStay": 3,
+    "contactPhone": "416-832-9144",
+    "contactEmail": "info@sandlakelodge.com"
+  }
+}
