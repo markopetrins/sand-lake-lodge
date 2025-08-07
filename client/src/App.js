@@ -9,6 +9,7 @@ import Features from './pages/Features';
 import Gallery from './pages/Gallery';
 import Booking from './pages/Booking';
 import Admin from './pages/Admin';
+import DemoAdmin from './pages/DemoAdmin';
 import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/content-admin" element={<DemoAdmin />} />
           </Routes>
           <Footer />
         </div>

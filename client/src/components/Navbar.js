@@ -11,7 +11,8 @@ const Navbar = () => {
     { path: '/about', label: 'About' },
     { path: '/features', label: 'Features' },
     { path: '/gallery', label: 'Gallery' },
-    { path: '/booking', label: 'Book Now' }
+    { path: '/booking', label: 'Book Now' },
+    { path: '/content-admin', label: 'Edit Content' }
   ];
 
   const toggleMenu = () => {

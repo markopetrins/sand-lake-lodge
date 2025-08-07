@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useContent } from '../hooks/useContent';
 
 const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const content = useContent();
 
   // Array of hero images - using the actual images provided
   const heroImages = [
@@ -72,10 +74,10 @@ const Home = () => {
                 <img src="/sand-lake-lodge/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-3 md:mb-4 text-white drop-shadow-2xl leading-tight">
-                Sand Lake Lodge
+                {content.home.hero.title}
               </h1>
                           <p className="text-lg sm:text-xl md:text-2xl mb-4 md:mb-6 text-amber-100 font-light drop-shadow-lg max-w-2xl md:max-w-3xl mx-auto leading-relaxed px-2">
-              Where time slows down and memories are made by the lake
+              {content.home.hero.subtitle}
             </p>
               <div className="w-16 md:w-20 h-0.5 md:h-1 bg-amber-400 mx-auto mb-4 md:mb-6"></div>
             </div>
@@ -85,13 +87,13 @@ const Home = () => {
                 to="/booking"
                 className="w-full sm:w-auto bg-amber-700 text-white px-6 md:px-8 lg:px-10 py-3 md:py-4 rounded-none font-semibold text-base md:text-lg hover:bg-amber-800 transition-all duration-300 inline-block shadow-xl border-2 border-amber-600 hover:border-amber-500 transform hover:-translate-y-1"
               >
-                Plan Your Escape
+                {content.home.hero.primaryButton}
               </Link>
               <Link
                 to="/gallery"
                 className="w-full sm:w-auto bg-transparent border-2 border-amber-200 text-amber-100 px-6 md:px-8 lg:px-10 py-3 md:py-4 rounded-none font-semibold text-base md:text-lg hover:bg-amber-200 hover:text-amber-900 transition-all duration-300 inline-block backdrop-blur-sm"
               >
-                Take a Look Around
+                {content.home.hero.secondaryButton}
               </Link>
             </div>
           </motion.div>
@@ -124,10 +126,10 @@ const Home = () => {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-amber-900 mb-4">
-              Your Perfect Lakeside Experience
+              {content.home.experience.sectionTitle}
             </h2>
             <p className="text-lg text-amber-700 max-w-2xl mx-auto">
-              Every detail has been thoughtfully crafted to create memories that last a lifetime
+              {content.home.experience.sectionSubtitle}
             </p>
           </motion.div>
 
@@ -148,8 +150,8 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-serif font-bold mb-2">Lakeside Living</h3>
-                <p className="text-amber-100 text-sm">Wake up to stunning lake views and fall asleep to the gentle sounds of nature</p>
+                <h3 className="text-xl font-serif font-bold mb-2">{content.home.experience.lakeside.title}</h3>
+                <p className="text-amber-100 text-sm">{content.home.experience.lakeside.description}</p>
               </div>
             </motion.div>
 
@@ -169,8 +171,8 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-serif font-bold mb-2">Water Adventures</h3>
-                <p className="text-amber-100 text-sm">Explore the lake with our provided kayaks and water equipment</p>
+                <h3 className="text-xl font-serif font-bold mb-2">{content.home.experience.water.title}</h3>
+                <p className="text-amber-100 text-sm">{content.home.experience.water.description}</p>
               </div>
             </motion.div>
 
@@ -190,8 +192,8 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-serif font-bold mb-2">Cozy Evenings</h3>
-                <p className="text-amber-100 text-sm">Gather around the firepit for stories, s'mores, and stargazing</p>
+                <h3 className="text-xl font-serif font-bold mb-2">{content.home.experience.evening.title}</h3>
+                <p className="text-amber-100 text-sm">{content.home.experience.evening.description}</p>
               </div>
             </motion.div>
           </div>
@@ -208,16 +210,16 @@ const Home = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
-              Ready to Begin Your Lakeside Adventure?
+              {content.home.cta.title}
             </h2>
             <p className="text-lg md:text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
-              Your perfect cottage getaway is just a click away.
+              {content.home.cta.subtitle}
             </p>
             <Link
               to="/booking"
               className="bg-amber-100 text-amber-900 px-8 md:px-10 py-4 md:py-5 rounded-none font-bold text-lg md:text-xl hover:bg-white transition-all duration-300 inline-block shadow-xl border-2 border-amber-200 hover:border-white transform hover:-translate-y-1"
             >
-              Check Availability & Reserve
+              {content.home.cta.buttonText}
             </Link>
           </motion.div>
         </div>

@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaCar } from 'react-icons/fa';
+import { useContent } from '../hooks/useContent';
 
 const About = () => {
+  const content = useContent();
+  
   return (
     <div className="pt-16">
       {/* Hero Section */}
@@ -27,10 +30,10 @@ const About = () => {
                 <img src="/sand-lake-lodge/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-3 text-white drop-shadow-2xl leading-tight">
-                About Sand Lake Lodge
+                {content.about.hero.title}
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl mb-4 text-amber-100 font-light drop-shadow-lg max-w-2xl md:max-w-3xl mx-auto leading-relaxed px-2">
-                Your lakeside sanctuary
+                {content.about.hero.subtitle}
               </p>
               <div className="w-16 md:w-20 h-0.5 md:h-1 bg-amber-400 mx-auto mb-4"></div>
             </div>
