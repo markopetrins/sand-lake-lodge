@@ -8,8 +8,9 @@ const Home = () => {
   // Array of hero images - using the actual images provided
   const heroImages = [
     '/sand-lake-lodge/images/hero/back_face.jpg',
-    '/sand-lake-lodge/images/hero/beach.jpg',
+    '/sand-lake-lodge/images/hero/dock.jpg',
     '/sand-lake-lodge/images/hero/bonfire.jpg',
+    '/sand-lake-lodge/images/hero/dock2.jpg',
     '/sand-lake-lodge/images/page/fire.jpg',
     '/sand-lake-lodge/images/hero/kitchen.jpg',
     '/sand-lake-lodge/images/hero/living_room.jpg'

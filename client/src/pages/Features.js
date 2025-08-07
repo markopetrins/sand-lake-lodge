@@ -9,7 +9,7 @@ const Features = () => {
       <section className="relative py-12 md:py-16 flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
-            src="/sand-lake-lodge/images/hero/back_face.jpg" 
+            src="/sand-lake-lodge/images/hero/dock2.jpg" 
             alt="Sand Lake Lodge" 
             className="w-full h-full object-cover"
           />

@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const modalRef = useRef(null);
 
   const images = [
     // Exterior & Patio
@@ -35,49 +38,40 @@ const Gallery = () => {
       description: 'Comfortable outdoor seating with lake breezes', 
       category: 'exterior' 
     },
+    { 
+      id: 5, 
+      src: '/sand-lake-lodge/images/gallery/birdfeeder.jpg', 
+      title: 'Bird Feeder', 
+      description: 'Enjoy watching local wildlife from the comfort of your patio', 
+      category: 'exterior' 
+    },
     
     // Interior - Living Areas
     { 
-      id: 5, 
+      id: 6, 
       src: '/sand-lake-lodge/images/gallery/livingroom.jpg', 
       title: 'Cozy Living Room', 
       description: 'Warm and inviting living space with lake views', 
       category: 'interior' 
     },
     { 
-      id: 6, 
+      id: 7, 
       src: '/sand-lake-lodge/images/gallery/diningtable.jpg', 
       title: 'Dining Area', 
       description: 'Perfect setting for family meals and gatherings', 
       category: 'interior' 
     },
     
-    // Playroom
-    { 
-      id: 7, 
-      src: '/sand-lake-lodge/images/gallery/playroom_1.jpg', 
-      title: 'Family Playroom', 
-      description: 'Dedicated space for kids to play, read, and have fun', 
-      category: 'playroom' 
-    },
-    { 
-      id: 8, 
-      src: '/sand-lake-lodge/images/gallery/playroom2.jpg', 
-      title: 'Kids Entertainment Area', 
-      description: 'Perfect room for children to enjoy their own space', 
-      category: 'playroom' 
-    },
-    
     // Kitchen
     { 
-      id: 9, 
+      id: 8, 
       src: '/sand-lake-lodge/images/gallery/kitchen.jpg', 
       title: 'Fully Equipped Kitchen', 
       description: 'Everything you need to prepare delicious meals', 
       category: 'kitchen' 
     },
     { 
-      id: 10, 
+      id: 9, 
       src: '/sand-lake-lodge/images/gallery/kitchen2.jpg', 
       title: 'Kitchen with Views', 
       description: 'Cook with beautiful lake views', 
@@ -86,28 +80,28 @@ const Gallery = () => {
     
     // Bedrooms
     { 
-      id: 11, 
+      id: 10, 
       src: '/sand-lake-lodge/images/gallery/master.jpg', 
       title: 'Master Bedroom', 
       description: 'Comfortable master bedroom with lake views', 
       category: 'bedrooms' 
     },
     { 
-      id: 12, 
+      id: 11, 
       src: '/sand-lake-lodge/images/gallery/bedroom2.jpg', 
       title: 'Guest Bedroom', 
       description: 'Cozy guest bedroom perfect for visitors', 
       category: 'bedrooms' 
     },
     { 
-      id: 13, 
+      id: 12, 
       src: '/sand-lake-lodge/images/gallery/bedroom3.jpg', 
       title: 'Additional Bedroom', 
       description: 'Spacious bedroom for family or friends', 
       category: 'bedrooms' 
     },
     { 
-      id: 14, 
+      id: 13, 
       src: '/sand-lake-lodge/images/gallery/bunkbedroom2.jpg', 
       title: 'Bunk Bed Room', 
       description: 'Perfect for kids with fun bunk bed setup', 
@@ -116,49 +110,127 @@ const Gallery = () => {
     
     // Bathrooms
     { 
-      id: 15, 
+      id: 14, 
       src: '/sand-lake-lodge/images/gallery/bathroom.jpg', 
       title: 'Main Bathroom', 
       description: 'Clean and modern bathroom facilities', 
       category: 'bathrooms' 
     },
     { 
-      id: 16, 
+      id: 15, 
       src: '/sand-lake-lodge/images/gallery/bathroom2.jpg', 
       title: 'Additional Bathroom', 
       description: 'Convenient bathroom for guests', 
       category: 'bathrooms' 
     },
     { 
-      id: 17, 
+      id: 16, 
       src: '/sand-lake-lodge/images/gallery/bathroom3.jpg', 
       title: 'Bathroom Detail', 
       description: 'Well-appointed bathroom with all amenities', 
       category: 'bathrooms' 
+    },
+    
+    // Playroom (moved to end)
+    { 
+      id: 17, 
+      src: '/sand-lake-lodge/images/gallery/playroom_1.jpg', 
+      title: 'Family Playroom', 
+      description: 'Dedicated space for kids to play, read, and have fun', 
+      category: 'playroom' 
+    },
+    { 
+      id: 18, 
+      src: '/sand-lake-lodge/images/gallery/playroom2.jpg', 
+      title: 'Kids Entertainment Area', 
+      description: 'Perfect room for children to enjoy their own space', 
+      category: 'playroom' 
     }
   ];
 
   const filteredImages = images;
 
-  const openImage = (image) => {
+  const openImage = useCallback((image) => {
     setSelectedImage(image);
-  };
+  }, []);
 
-  const closeImage = () => {
+  const closeImage = useCallback(() => {
     setSelectedImage(null);
-  };
+  }, []);
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     const currentIndex = filteredImages.findIndex(img => img.id === selectedImage.id);
     const nextIndex = (currentIndex + 1) % filteredImages.length;
     setSelectedImage(filteredImages[nextIndex]);
-  };
+  }, [filteredImages, selectedImage]);
 
-  const prevImage = () => {
+  const prevImage = useCallback(() => {
     const currentIndex = filteredImages.findIndex(img => img.id === selectedImage.id);
     const prevIndex = currentIndex === 0 ? filteredImages.length - 1 : currentIndex - 1;
     setSelectedImage(filteredImages[prevIndex]);
+  }, [filteredImages, selectedImage]);
+
+  // Swipe handlers
+  const onTouchStart = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
   };
+
+  const onTouchMove = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      nextImage();
+    }
+    if (isRightSwipe) {
+      prevImage();
+    }
+  };
+
+  // Keyboard navigation and body scroll prevention
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!selectedImage) return;
+      
+      if (e.key === 'ArrowLeft') {
+        prevImage();
+      } else if (e.key === 'ArrowRight') {
+        nextImage();
+      } else if (e.key === 'Escape') {
+        closeImage();
+      }
+    };
+
+    // Prevent body scroll when modal is open
+    if (selectedImage) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.touchAction = 'none';
+    } else {
+      document.body.style.overflow = 'unset';
+      document.body.style.touchAction = 'auto';
+    }
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = 'unset';
+      document.body.style.touchAction = 'auto';
+    };
+  }, [selectedImage, nextImage, prevImage, closeImage]);
 
   return (
     <div className="pt-16">
@@ -221,10 +293,10 @@ const Gallery = () => {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <h3 className="text-lg font-serif font-bold mb-1">{image.title}</h3>
-                      <p className="text-sm text-amber-100">{image.description}</p>
-                    </div>
+                                         <div className="absolute bottom-0 left-0 right-0 p-2 md:p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                       <h3 className="text-sm md:text-lg font-serif font-bold mb-0.5 md:mb-1">{image.title}</h3>
+                       <p className="text-xs md:text-sm text-amber-100 line-clamp-2">{image.description}</p>
+                     </div>
                   </div>
                 </div>
               </motion.div>
@@ -246,34 +318,48 @@ const Gallery = () => {
       {/* Lightbox Modal */}
       <AnimatePresence>
         {selectedImage && (
-          <div className="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 p-4">
+                     <div 
+             ref={modalRef}
+             className="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 p-4"
+             onTouchStart={onTouchStart}
+             onTouchMove={onTouchMove}
+             onTouchEnd={onTouchEnd}
+             onTouchCancel={(e) => e.preventDefault()}
+             style={{ touchAction: 'none' }}
+           >
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               className="relative max-w-5xl w-full max-h-[90vh]"
             >
-              {/* Close button */}
-              <button
-                onClick={closeImage}
-                className="absolute top-4 right-4 text-white hover:text-amber-200 z-10 bg-black/50 rounded-full p-2 transition-colors duration-300"
-              >
-                <FaTimes size={24} />
-              </button>
+                             {/* Close button */}
+               <button
+                 onClick={closeImage}
+                 onTouchEnd={(e) => e.stopPropagation()}
+                 className="absolute top-4 right-4 text-white hover:text-amber-200 z-10 bg-black/50 rounded-full p-2 transition-colors duration-300"
+                 style={{ touchAction: 'manipulation' }}
+               >
+                 <FaTimes size={24} />
+               </button>
 
-              {/* Navigation buttons */}
-              <button
-                onClick={prevImage}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-amber-200 z-10 bg-black/50 rounded-full p-3 transition-colors duration-300"
-              >
-                <FaChevronLeft size={24} />
-              </button>
-              <button
-                onClick={nextImage}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-amber-200 z-10 bg-black/50 rounded-full p-3 transition-colors duration-300"
-              >
-                <FaChevronRight size={24} />
-              </button>
+               {/* Navigation buttons */}
+               <button
+                 onClick={prevImage}
+                 onTouchEnd={(e) => e.stopPropagation()}
+                 className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-amber-200 z-10 bg-black/50 rounded-full p-3 transition-colors duration-300"
+                 style={{ touchAction: 'manipulation' }}
+               >
+                 <FaChevronLeft size={24} />
+               </button>
+               <button
+                 onClick={nextImage}
+                 onTouchEnd={(e) => e.stopPropagation()}
+                 className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-amber-200 z-10 bg-black/50 rounded-full p-3 transition-colors duration-300"
+                 style={{ touchAction: 'manipulation' }}
+               >
+                 <FaChevronRight size={24} />
+               </button>
 
               {/* Image content */}
               <div className="bg-white rounded-lg overflow-hidden shadow-2xl">
@@ -283,10 +369,10 @@ const Gallery = () => {
                     alt={selectedImage.title}
                     className="w-full h-auto max-h-[70vh] object-contain"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                    <h3 className="text-2xl font-serif font-bold text-white mb-2">{selectedImage.title}</h3>
-                    <p className="text-amber-100 text-lg">{selectedImage.description}</p>
-                  </div>
+                                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3 md:p-6">
+                     <h3 className="text-lg md:text-2xl font-serif font-bold text-white mb-1 md:mb-2">{selectedImage.title}</h3>
+                     <p className="text-sm md:text-lg text-amber-100 line-clamp-2">{selectedImage.description}</p>
+                   </div>
                 </div>
               </div>
 
