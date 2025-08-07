@@ -116,24 +116,25 @@ const DemoAdmin = () => {
     }
   };
 
-  const renderTextInput = (label, value, onChange, type = 'text', rows = null) => (
-    <div className="mb-4">
+  const renderTextInput = (label, value, onChange, type = 'text', isTextarea = false) => (
+    <div className="mb-6">
       <label className="block text-sm font-medium text-amber-800 mb-2">
         {label}
       </label>
-      {rows ? (
+      {isTextarea ? (
         <textarea
           value={value || ''}
           onChange={onChange}
-          rows={rows}
-          className="w-full px-3 py-2 border border-amber-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+          className="w-full px-4 py-3 border border-amber-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-base leading-relaxed font-normal resize-vertical min-h-[200px]"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+          placeholder="Type as much as you need..."
         />
       ) : (
         <input
           type={type}
           value={value || ''}
           onChange={onChange}
-          className="w-full px-3 py-2 border border-amber-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+          className="w-full px-4 py-3 border border-amber-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-base"
         />
       )}
     </div>
@@ -296,7 +297,7 @@ const DemoAdmin = () => {
                     editableContent.global.siteTagline,
                     (e) => handleContentChange('global', 'siteTagline', null, e.target.value),
                     'text',
-                    2
+                    true
                   )}
                   
                   {renderTextInput(
@@ -340,7 +341,7 @@ const DemoAdmin = () => {
                       editableContent.home.hero.subtitle,
                       (e) => handleContentChange('home', 'hero', 'subtitle', e.target.value),
                       'text',
-                      2
+                      true
                     )}
                     
                     {renderTextInput(
@@ -371,7 +372,7 @@ const DemoAdmin = () => {
                       editableContent.home.experience.sectionSubtitle,
                       (e) => handleContentChange('home', 'experience', 'sectionSubtitle', e.target.value),
                       'text',
-                      2
+                      true
                     )}
 
                     <div className="grid md:grid-cols-3 gap-4 mt-6">
@@ -387,7 +388,7 @@ const DemoAdmin = () => {
                           editableContent.home.experience.lakeside.description,
                           (e) => handleContentChange('home', 'experience', 'lakeside', {...editableContent.home.experience.lakeside, description: e.target.value}),
                           'text',
-                          2
+                          true
                         )}
                       </div>
                       
@@ -403,7 +404,7 @@ const DemoAdmin = () => {
                           editableContent.home.experience.water.description,
                           (e) => handleContentChange('home', 'experience', 'water', {...editableContent.home.experience.water, description: e.target.value}),
                           'text',
-                          2
+                          true
                         )}
                       </div>
                       
@@ -419,7 +420,7 @@ const DemoAdmin = () => {
                           editableContent.home.experience.evening.description,
                           (e) => handleContentChange('home', 'experience', 'evening', {...editableContent.home.experience.evening, description: e.target.value}),
                           'text',
-                          2
+                          true
                         )}
                       </div>
                     </div>
@@ -487,7 +488,7 @@ const DemoAdmin = () => {
                       editableContent.about.main.paragraph1,
                       (e) => handleContentChange('about', 'main', 'paragraph1', e.target.value),
                       'text',
-                      3
+                      true
                     )}
                     
                     {renderTextInput(
@@ -495,7 +496,7 @@ const DemoAdmin = () => {
                       editableContent.about.main.paragraph2,
                       (e) => handleContentChange('about', 'main', 'paragraph2', e.target.value),
                       'text',
-                      3
+                      true
                     )}
                     
                     {renderTextInput(
@@ -503,7 +504,7 @@ const DemoAdmin = () => {
                       editableContent.about.main.paragraph3,
                       (e) => handleContentChange('about', 'main', 'paragraph3', e.target.value),
                       'text',
-                      3
+                      true
                     )}
 
                     {renderArrayInput(
@@ -547,7 +548,7 @@ const DemoAdmin = () => {
                       value,
                       (e) => handleContentChange('footer', key, null, e.target.value),
                       'text',
-                      key === 'description' ? 2 : 1
+                      key === 'description'
                     )
                   ))}
                 </div>
