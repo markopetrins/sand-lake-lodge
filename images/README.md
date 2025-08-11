@@ -1,6 +1,6 @@
 # Image Organization
 
-This directory contains all images used throughout the Sand Lake Lodge website, organized by purpose for better efficiency and maintainability.
+This directory contains all images used throughout the Sand Lake Shores website, organized by purpose for better efficiency and maintainability.
 
 ## Directory Structure
 
