@@ -24,9 +24,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-                            <img src="/sand-lake-lodge/cabin_icon.png" alt="Sand Lake Lodge" className="w-8 h-8 md:w-10 md:h-10 group-hover:scale-110 transition-transform duration-300" />
+            <img src="/sand-lake-shores/cabin_icon.png" alt="Sand Lake Shores" className="w-8 h-8 md:w-10 md:h-10 group-hover:scale-110 transition-transform duration-300" />
             <span className="text-lg md:text-xl font-serif font-bold text-amber-800 group-hover:text-amber-900 transition-colors duration-300">
-              Sand Lake Lodge
+              Sand Lake Shores
             </span>
           </Link>
 

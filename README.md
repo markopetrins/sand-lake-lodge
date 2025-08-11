@@ -1,10 +1,10 @@
-# Sand Lake Lodge - Booking System
+# Sand Lake Shores - Booking System
 
-A secure, optimized booking system for Sand Lake Lodge with comprehensive admin management capabilities.
+A secure, optimized booking system for Sand Lake Shores with comprehensive admin management capabilities.
 
 ## 🚀 GitHub Pages Demo
 
-**Demo Site**: [https://markopetrina.github.io/sand-lake-lodge](https://markopetrins.github.io/sand-lake-lodge)
+**Demo Site**: [https://markopetrina.github.io/sand-lake-shores](https://markopetrins.github.io/sand-lake-shores)
 
 **Note**: For the GitHub Pages demo, booking and email functionality has been temporarily disabled. The admin page is fully functional for demonstration purposes.
 
@@ -48,7 +48,7 @@ A secure, optimized booking system for Sand Lake Lodge with comprehensive admin 
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd sand-lake-lodge
+   cd sand-lake-shores
    ```
 
 2. **Install dependencies**
@@ -123,7 +123,7 @@ npm run deploy
 ## 📁 Project Structure
 
 ```
-sand-lake-lodge/
+sand-lake-shores/
 ├── client/                 # React frontend
 │   ├── public/            # Static assets
 │   ├── src/               # React components and pages

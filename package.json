@@ -1,7 +1,7 @@
 {
-  "name": "sand-lake-lodge",
+  "name": "sand-lake-shores",
   "version": "1.0.0",
-  "description": "A beautiful Airbnb website for Sand Lake Lodge with booking functionality",
+  "description": "A beautiful Airbnb website for Sand Lake Shores with booking functionality",
   "main": "server/index.js",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",

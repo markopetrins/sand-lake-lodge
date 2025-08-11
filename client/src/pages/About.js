@@ -10,8 +10,8 @@ const About = () => {
       <section className="relative py-12 md:py-16 flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
-            src="/sand-lake-lodge/images/hero/beach.jpg" 
-            alt="Sand Lake Lodge" 
+            src="/sand-lake-shores/images/hero/beach.jpg" 
+            alt="Sand Lake Shores" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
@@ -24,10 +24,10 @@ const About = () => {
           >
             <div className="mb-4 md:mb-6">
               <div className="inline-block p-2 md:p-3 bg-amber-50/60 backdrop-blur-sm rounded-full mb-3">
-                <img src="/sand-lake-lodge/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
+                <img src="/sand-lake-shores/cabin_icon.png" alt="Sand Lake Shores" className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-3 text-white drop-shadow-2xl leading-tight">
-                About Sand Lake Lodge
+                About Sand Lake Shores
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl mb-4 text-amber-100 font-light drop-shadow-lg max-w-2xl md:max-w-3xl mx-auto leading-relaxed px-2">
                 Your lakeside sanctuary
@@ -41,69 +41,119 @@ const About = () => {
       {/* Main Content */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
+            {/* Welcome & Overview */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-center lg:text-left order-2 lg:order-1"
+              className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-amber-900 mb-6">
                 Welcome to Your Lakeside Paradise
               </h2>
-              <p className="text-lg text-amber-800 mb-6 leading-relaxed">
-                Sand Lake Lodge is more than just a place to stay—it's your personal retreat in the heart of Ontario's pristine lake country. Here, you'll find the perfect balance of seclusion and accessibility, where every detail has been thoughtfully crafted to create an unforgettable experience.
+              <p className="text-lg text-amber-800 mb-8 leading-relaxed max-w-3xl mx-auto">
+                Welcome to Sand Lake Shores – Rustic Comfort, Lakeside Bliss. Discover the perfect blend of timeless charm and modern comfort at our handcrafted cottage, nestled along 200 feet of private shoreline in Ontario's pristine lake country.
               </p>
-              <p className="text-lg text-amber-800 mb-6 leading-relaxed">
-                Our handcrafted log cabin stands as a testament to traditional craftsmanship while offering all the modern comforts you expect. With 3 bedrooms, a bunkbed room, 3 bathrooms, a dedicated playroom, and spacious living areas, we can comfortably accommodate up to 8 guests.
-              </p>
-              <p className="text-lg text-amber-800 mb-8 leading-relaxed">
-                Whether you're seeking a romantic getaway, a family adventure, or a peaceful solo retreat, Sand Lake Lodge provides the perfect backdrop for your story. With 200 feet of private shoreline, stunning sunset views, and endless outdoor activities, your perfect escape awaits.
-              </p>
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="space-y-2">
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-amber-600 rounded-full mr-3"></div>
-                    <span className="text-amber-800 font-medium">3 bedrooms + bunkbed room</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-amber-600 rounded-full mr-3"></div>
-                    <span className="text-amber-800 font-medium">3 full bathrooms</span>
-                  </div>
+              
+              {/* Quick Facts */}
+              <div className="grid md:grid-cols-4 gap-6 mb-8">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-amber-600 mb-2">4</div>
+                  <div className="text-amber-800 font-medium">Bedrooms</div>
                 </div>
-                <div className="space-y-2">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-amber-600 mb-2">3</div>
+                  <div className="text-amber-800 font-medium">Bathrooms</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-amber-600 mb-2">8</div>
+                  <div className="text-amber-800 font-medium">Guests</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-amber-600 mb-2">200'</div>
+                  <div className="text-amber-800 font-medium">Shoreline</div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Location & Setting */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="grid lg:grid-cols-2 gap-12 items-center mb-16"
+            >
+              <div>
+                <h3 className="text-2xl font-serif font-bold text-amber-900 mb-4">
+                  Perfect Location
+                </h3>
+                <p className="text-amber-800 mb-4 leading-relaxed">
+                  Located in the southern Almaguin Highlands, just west of Algonquin Park, north of Huntsville, and east of Hwy 11. We're at the end of Hwy 518 on Sand Lake, about 10 km north of Kearney.
+                </p>
+                <div className="space-y-3">
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-amber-600 rounded-full mr-3"></div>
-                    <span className="text-amber-800 font-medium">Dedicated playroom</span>
+                    <span className="text-amber-800">2 acres of private woodland</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-amber-600 rounded-full mr-3"></div>
-                    <span className="text-amber-800 font-medium">Sleeps up to 8 guests</span>
+                    <span className="text-amber-800">15 minutes to amenities</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-amber-600 rounded-full mr-3"></div>
+                    <span className="text-amber-800">2 hours from Toronto</span>
                   </div>
                 </div>
               </div>
-              <Link
-                to="/booking"
-                className="bg-amber-800 text-white px-8 py-4 rounded-none font-semibold hover:bg-amber-900 transition-all duration-300 inline-block border-2 border-amber-700 hover:border-amber-600 transform hover:-translate-y-1 shadow-lg"
-              >
-                Reserve Your Stay
-              </Link>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="relative order-1 lg:order-2"
-            >
               <div className="relative">
                 <img 
-                  src="/sand-lake-lodge/images/hero/living_room.jpg" 
-                  alt="Sand Lake Lodge living room with lake views" 
-                  className="w-full h-80 md:h-96 object-cover shadow-2xl"
+                  src="/sand-lake-shores/images/hero/living_room.jpg" 
+                  alt="Sand Lake Shores living room with lake views" 
+                  className="w-full h-80 object-cover shadow-2xl rounded-lg"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-amber-900/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-amber-900/30 to-transparent rounded-lg"></div>
+              </div>
+            </motion.div>
+
+            {/* What Makes Us Special */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="mb-16"
+            >
+              <h3 className="text-2xl font-serif font-bold text-amber-900 mb-8 text-center">
+                What Makes Sand Lake Shores Special
+              </h3>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center bg-amber-50 p-6 rounded-lg">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl">🏠</span>
+                  </div>
+                  <h4 className="text-lg font-serif font-bold text-amber-900 mb-2">Handcrafted Comfort</h4>
+                  <p className="text-amber-700 text-sm">Traditional craftsmanship meets modern luxury in our four-bedroom cottage</p>
+                </div>
+                
+                <div className="text-center bg-amber-50 p-6 rounded-lg">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl">🌊</span>
+                  </div>
+                  <h4 className="text-lg font-serif font-bold text-amber-900 mb-2">Lakeside Living</h4>
+                  <p className="text-amber-700 text-sm">200 feet of private shoreline with sandy beach, dock, and water activities</p>
+                </div>
+                
+                <div className="text-center bg-amber-50 p-6 rounded-lg">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl">🎯</span>
+                  </div>
+                  <h4 className="text-lg font-serif font-bold text-amber-900 mb-2">Perfect Balance</h4>
+                  <p className="text-amber-700 text-sm">Secluded paradise with easy access to amenities and attractions</p>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -122,7 +172,7 @@ const About = () => {
           >
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-amber-900 mb-4">Your Perfect Getaway Awaits</h2>
             <p className="text-lg md:text-xl text-amber-700 max-w-2xl mx-auto">
-              Experience the perfect blend of adventure and relaxation at Sand Lake Lodge
+              Experience the perfect blend of adventure and relaxation at Sand Lake Shores
             </p>
           </motion.div>
 
@@ -136,8 +186,8 @@ const About = () => {
              >
                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                                    <img 
-                    src="/sand-lake-lodge/images/hero/kitchen.jpg" 
-                    alt="Fully equipped kitchen at Sand Lake Lodge" 
+                    src="/sand-lake-shores/images/hero/kitchen.jpg" 
+                    alt="Fully equipped kitchen at Sand Lake Shores" 
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                  <h3 className="text-xl font-serif font-bold text-amber-900 mb-2">Fully Equipped Kitchen</h3>
@@ -154,8 +204,8 @@ const About = () => {
              >
                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                                    <img 
-                    src="/sand-lake-lodge/images/hero/dock.jpg" 
-                    alt="Private dock at Sand Lake Lodge" 
+                    src="/sand-lake-shores/images/hero/dock.jpg" 
+                    alt="Private dock at Sand Lake Shores" 
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                  <h3 className="text-xl font-serif font-bold text-amber-900 mb-2">Private Dock</h3>
@@ -172,8 +222,8 @@ const About = () => {
              >
                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                                    <img 
-                    src="/sand-lake-lodge/images/hero/bonfire.jpg" 
-                    alt="Bonfire area at Sand Lake Lodge" 
+                    src="/sand-lake-shores/images/hero/bonfire.jpg" 
+                    alt="Bonfire area at Sand Lake Shores" 
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                  <h3 className="text-xl font-serif font-bold text-amber-900 mb-2">Bonfire Area</h3>
@@ -267,7 +317,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-serif font-bold text-white mb-4">Ready to Experience Sand Lake Lodge?</h2>
+            <h2 className="text-3xl font-serif font-bold text-white mb-4">Ready to Experience Sand Lake Shores?</h2>
             <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-8">
               <div className="text-center">
                 <FaPhone className="text-2xl text-amber-200 mx-auto mb-2" />

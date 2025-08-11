@@ -7,13 +7,13 @@ const Home = () => {
 
   // Array of hero images - using the actual images provided
   const heroImages = [
-    '/sand-lake-lodge/images/hero/back_face.jpg',
-    '/sand-lake-lodge/images/hero/dock.jpg',
-    '/sand-lake-lodge/images/hero/bonfire.jpg',
-    '/sand-lake-lodge/images/hero/dock2.jpg',
-    '/sand-lake-lodge/images/page/fire.jpg',
-    '/sand-lake-lodge/images/hero/kitchen.jpg',
-    '/sand-lake-lodge/images/hero/living_room.jpg'
+    '/sand-lake-shores/images/hero/back_face.jpg',
+    '/sand-lake-shores/images/hero/dock.jpg',
+    '/sand-lake-shores/images/hero/bonfire.jpg',
+    '/sand-lake-shores/images/hero/dock2.jpg',
+    '/sand-lake-shores/images/page/fire.jpg',
+    '/sand-lake-shores/images/hero/kitchen.jpg',
+    '/sand-lake-shores/images/hero/living_room.jpg'
   ];
 
   // Auto-advance images every 6 seconds
@@ -69,14 +69,14 @@ const Home = () => {
           >
             <div className="mb-6 md:mb-8">
               <div className="inline-block p-2 md:p-3 bg-amber-50/60 backdrop-blur-sm rounded-full mb-3 md:mb-4">
-                <img src="/sand-lake-lodge/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
+                <img src="/sand-lake-shores/cabin_icon.png" alt="Sand Lake Shores" className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-3 md:mb-4 text-white drop-shadow-2xl leading-tight">
-                Sand Lake Lodge
+                Sand Lake Shores
               </h1>
-                          <p className="text-lg sm:text-xl md:text-2xl mb-4 md:mb-6 text-amber-100 font-light drop-shadow-lg max-w-2xl md:max-w-3xl mx-auto leading-relaxed px-2">
-              Where time slows down and memories are made by the lake
-            </p>
+              <p className="text-lg sm:text-xl md:text-2xl mb-4 md:mb-6 text-amber-100 font-light drop-shadow-lg max-w-2xl md:max-w-3xl mx-auto leading-relaxed px-2">
+                Where time slows down and memories are made by the lake
+              </p>
               <div className="w-16 md:w-20 h-0.5 md:h-1 bg-amber-400 mx-auto mb-4 md:mb-6"></div>
             </div>
 
@@ -127,7 +127,7 @@ const Home = () => {
               Your Perfect Lakeside Experience
             </h2>
             <p className="text-lg text-amber-700 max-w-2xl mx-auto">
-              Every detail has been thoughtfully crafted to create memories that last a lifetime
+              Every detail has been thoughtfully crafted to create memories that last a lifetime.
             </p>
           </motion.div>
 
@@ -141,7 +141,7 @@ const Home = () => {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-amber-200 to-amber-300 relative">
                 <img 
-                  src="/sand-lake-lodge/images/page/beach2.jpg" 
+                  src="/sand-lake-shores/images/page/beach2.jpg" 
                   alt="Lakeside living" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -149,7 +149,7 @@ const Home = () => {
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h3 className="text-xl font-serif font-bold mb-2">Lakeside Living</h3>
-                <p className="text-amber-100 text-sm">Wake up to stunning lake views and fall asleep to the gentle sounds of nature</p>
+                <p className="text-amber-100 text-sm">Start your day with breathtaking lake views from the deck, enjoying your coffee just steps from the water, and drift off to sleep to the soothing sounds of nature.</p>
               </div>
             </motion.div>
 
@@ -162,7 +162,7 @@ const Home = () => {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-amber-200 to-amber-300 relative">
                 <img 
-                  src="/sand-lake-lodge/images/page/kayak.jpg" 
+                  src="/sand-lake-shores/images/page/kayak.jpg" 
                   alt="Water adventures" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -170,7 +170,7 @@ const Home = () => {
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h3 className="text-xl font-serif font-bold mb-2">Water Adventures</h3>
-                <p className="text-amber-100 text-sm">Explore the lake with our provided kayaks and water equipment</p>
+                <p className="text-amber-100 text-sm">Unwind on a private sandy beach, either lounging on a beach chair or splashing around in the water with a gentle, sloping entry. Kick back on the Muskoka chairs at the end of the 140-foot dock or explore the lake using our kayaks, canoe, paddleboard, and other fun water toys.</p>
               </div>
             </motion.div>
 
@@ -183,7 +183,7 @@ const Home = () => {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-amber-200 to-amber-300 relative">
                 <img 
-                  src="/sand-lake-lodge/images/page/fire.jpg" 
+                  src="/sand-lake-shores/images/page/fire.jpg" 
                   alt="Cozy evenings" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -191,7 +191,7 @@ const Home = () => {
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h3 className="text-xl font-serif font-bold mb-2">Cozy Evenings</h3>
-                <p className="text-amber-100 text-sm">Gather around the firepit for stories, s'mores, and stargazing</p>
+                <p className="text-amber-100 text-sm">Whether you're gathered around the firepit in the evening for stories, s'mores, and stargazing, or cozying up in the family room for a movie night, there's always a perfect spot to relax.</p>
               </div>
             </motion.div>
           </div>

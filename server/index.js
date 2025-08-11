@@ -145,7 +145,7 @@ async function initializeData() {
     const initialData = {
       bookings: [],
       settings: {
-        cottageName: "Sand Lake Lodge",
+        cottageName: "Sand Lake Shores",
         pricePerNight: 250,
         weekendPrice: 300,
         minStay: 3,
@@ -224,7 +224,7 @@ async function sendEmailNotification(subject, message, toEmail = null) {
     }
 
     const mailOptions = {
-      from: `"Sand Lake Lodge" <${emailConfig.auth.user}>`,
+      from: `"Sand Lake Shores" <${emailConfig.auth.user}>`,
       to: toEmail,
       subject: subject,
       text: message,
@@ -311,11 +311,11 @@ app.post('/api/bookings', validateBookingInput, async (req, res) => {
     if (existingActiveBookings.length > 0) {
       // Send rejection emails for existing bookings
       for (const existingBooking of existingActiveBookings) {
-        const rejectionSubject = 'Previous Booking Request Cancelled - Sand Lake Lodge';
+        const rejectionSubject = 'Previous Booking Request Cancelled - Sand Lake Shores';
         const rejectionMessage = `
 Dear ${existingBooking.name},
 
-Your previous booking request for Sand Lake Lodge has been automatically cancelled because you have submitted a new booking request.
+Your previous booking request for Sand Lake Shores has been automatically cancelled because you have submitted a new booking request.
 
 Previous Booking Details:
 - Check-in: ${existingBooking.checkIn}
@@ -326,7 +326,7 @@ Previous Booking Details:
 This cancellation occurred because our system only allows one active booking request per guest at a time. Your new booking request will be processed instead.
 
 Best regards,
-Sand Lake Lodge Team
+Sand Lake Shores Team
         `.trim();
         
         await sendEmailNotification(rejectionSubject, rejectionMessage, existingBooking.email);
@@ -375,11 +375,11 @@ Sand Lake Lodge Team
     await writeData(data);
 
     // Send confirmation email to the guest
-    const guestSubject = 'Booking Request Confirmed - Sand Lake Lodge';
+    const guestSubject = 'Booking Request Confirmed - Sand Lake Shores';
     const guestMessage = `
 Dear ${name},
 
-Thank you for your booking request for Sand Lake Lodge. We have received your request and will review it shortly.
+Thank you for your booking request for Sand Lake Shores. We have received your request and will review it shortly.
 
 Booking Details:
 - Check-in: ${checkIn}
@@ -392,15 +392,15 @@ ${message ? `- Additional Message: ${message}` : ''}
 We will contact you via email within 24 hours with payment details and confirmation.
 
 Best regards,
-Sand Lake Lodge Team
+Sand Lake Shores Team
     `.trim();
     
     await sendEmailNotification(guestSubject, guestMessage, email);
 
     // Send notification email to admin
-    const adminSubject = 'New Booking Request - Sand Lake Lodge';
+    const adminSubject = 'New Booking Request - Sand Lake Shores';
     const adminMessage = `
-You have received a new booking request for Sand Lake Lodge.
+You have received a new booking request for Sand Lake Shores.
 
 Guest Details:
 - Name: ${name}
@@ -417,7 +417,7 @@ To review and manage this booking request, please visit:
 http://localhost:3000/admin
 
 Best regards,
-Sand Lake Lodge Booking System
+Sand Lake Shores Booking System
     `.trim();
     
     await sendEmailNotification(adminSubject, adminMessage, ADMIN_EMAIL);
@@ -446,11 +446,11 @@ app.post('/api/admin/bookings', authenticateToken, validateBookingInput, async (
     if (existingActiveBookings.length > 0) {
       // Send rejection emails for existing bookings
       for (const existingBooking of existingActiveBookings) {
-        const rejectionSubject = 'Previous Booking Request Cancelled - Sand Lake Lodge';
+        const rejectionSubject = 'Previous Booking Request Cancelled - Sand Lake Shores';
         const rejectionMessage = `
 Dear ${existingBooking.name},
 
-Your previous booking request for Sand Lake Lodge has been automatically cancelled because a new booking has been created for your email address.
+Your previous booking request for Sand Lake Shores has been automatically cancelled because a new booking has been created for your email address.
 
 Previous Booking Details:
 - Check-in: ${existingBooking.checkIn}
@@ -461,7 +461,7 @@ Previous Booking Details:
 This cancellation occurred because our system only allows one active booking request per guest at a time.
 
 Best regards,
-Sand Lake Lodge Team
+Sand Lake Shores Team
         `.trim();
         
         await sendEmailNotification(rejectionSubject, rejectionMessage, existingBooking.email);
@@ -556,11 +556,11 @@ app.patch('/api/bookings/:id', authenticateToken, async (req, res) => {
 
       // Send notification to guest
       if (status === 'approved') {
-        const guestSubject = 'Booking Confirmed - Sand Lake Lodge';
+        const guestSubject = 'Booking Confirmed - Sand Lake Shores';
         const guestMessage = `
 Dear ${booking.name},
 
-Great news! Your booking request for Sand Lake Lodge has been approved.
+Great news! Your booking request for Sand Lake Shores has been approved.
 
 Booking Details:
 - Check-in: ${booking.checkIn}
@@ -572,10 +572,10 @@ ${booking.message ? `- Additional Message: ${booking.message}` : ''}
 
 We will contact you shortly with payment details and arrival instructions.
 
-Thank you for choosing Sand Lake Lodge for your stay!
+Thank you for choosing Sand Lake Shores for your stay!
 
 Best regards,
-Sand Lake Lodge Team
+Sand Lake Shores Team
         `.trim();
         
         await sendEmailNotification(guestSubject, guestMessage, booking.email);

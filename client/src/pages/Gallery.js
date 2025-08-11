@@ -13,7 +13,7 @@ const Gallery = () => {
     // Exterior & Patio
     { 
       id: 1, 
-      src: '/sand-lake-lodge/images/gallery/patio1.jpg', 
+      src: '/sand-lake-shores/images/gallery/patio1.jpg', 
       title: 'Outdoor Patio', 
       description: 'Beautiful outdoor space perfect for dining and relaxation', 
       category: 'exterior',
@@ -21,7 +21,7 @@ const Gallery = () => {
     },
     { 
       id: 2, 
-      src: '/sand-lake-lodge/images/gallery/patio2.jpg', 
+      src: '/sand-lake-shores/images/gallery/patio2.jpg', 
       title: 'Patio with Lake Views', 
       description: 'Enjoy stunning lake views from our spacious patio', 
       category: 'exterior',
@@ -29,7 +29,7 @@ const Gallery = () => {
     },
     { 
       id: 3, 
-      src: '/sand-lake-lodge/images/gallery/patio3.jpg', 
+      src: '/sand-lake-shores/images/gallery/patio3.jpg', 
       title: 'Evening Patio', 
       description: 'Perfect spot for evening gatherings and stargazing', 
       category: 'exterior',
@@ -37,7 +37,7 @@ const Gallery = () => {
     },
     { 
       id: 4, 
-      src: '/sand-lake-lodge/images/gallery/patio4.jpg', 
+      src: '/sand-lake-shores/images/gallery/patio4.jpg', 
       title: 'Patio Seating', 
       description: 'Comfortable outdoor seating with lake breezes', 
       category: 'exterior',
@@ -45,7 +45,7 @@ const Gallery = () => {
     },
     { 
       id: 5, 
-      src: '/sand-lake-lodge/images/gallery/birdfeeder.jpg', 
+      src: '/sand-lake-shores/images/gallery/birdfeeder.jpg', 
       title: 'Bird Feeder', 
       description: 'Enjoy watching local wildlife from the comfort of your patio', 
       category: 'exterior',
@@ -53,7 +53,7 @@ const Gallery = () => {
     },
     { 
       id: 6, 
-      src: '/sand-lake-lodge/images/gallery/backofcottage.jpg', 
+      src: '/sand-lake-shores/images/gallery/backofcottage.jpg', 
       title: 'Back of Cottage', 
       description: 'Beautiful rear view of the cottage with natural surroundings', 
       category: 'exterior',
@@ -61,7 +61,7 @@ const Gallery = () => {
     },
     { 
       id: 7, 
-      src: '/sand-lake-lodge/images/gallery/barbecue.jpg', 
+      src: '/sand-lake-shores/images/gallery/barbecue.jpg', 
       title: 'BBQ Area', 
       description: 'Perfect grilling setup for outdoor cooking', 
       category: 'exterior',
@@ -69,7 +69,7 @@ const Gallery = () => {
     },
     { 
       id: 8, 
-      src: '/sand-lake-lodge/images/gallery/bonfire.jpg', 
+      src: '/sand-lake-shores/images/gallery/bonfire.jpg', 
       title: 'Bonfire Area', 
       description: 'Cozy fire pit for evening gatherings and marshmallow roasting', 
       category: 'exterior',
@@ -77,7 +77,7 @@ const Gallery = () => {
     },
     { 
       id: 9, 
-      src: '/sand-lake-lodge/images/gallery/dock.jpg', 
+      src: '/sand-lake-shores/images/gallery/dock.jpg', 
       title: 'Private Dock', 
       description: 'Your own private dock for fishing, swimming, and relaxation', 
       category: 'exterior',
@@ -85,7 +85,7 @@ const Gallery = () => {
     },
     { 
       id: 10, 
-      src: '/sand-lake-lodge/images/gallery/lake.jpg', 
+      src: '/sand-lake-shores/images/gallery/lake.jpg', 
       title: 'Lake View', 
       description: 'Stunning lake views from the cottage', 
       category: 'exterior',
@@ -95,7 +95,7 @@ const Gallery = () => {
     // Interior - Living Areas
     { 
       id: 11, 
-      src: '/sand-lake-lodge/images/gallery/livingroom.jpg', 
+      src: '/sand-lake-shores/images/gallery/livingroom.jpg', 
       title: 'Cozy Living Room', 
       description: 'Warm and inviting living space with lake views', 
       category: 'interior',
@@ -103,7 +103,7 @@ const Gallery = () => {
     },
     { 
       id: 12, 
-      src: '/sand-lake-lodge/images/gallery/livingroom2.jpg', 
+      src: '/sand-lake-shores/images/gallery/livingroom2.jpg', 
       title: 'Living Area', 
       description: 'Comfortable seating area perfect for relaxation', 
       category: 'interior',
@@ -111,7 +111,7 @@ const Gallery = () => {
     },
     { 
       id: 13, 
-      src: '/sand-lake-lodge/images/gallery/diningtable.jpg', 
+      src: '/sand-lake-shores/images/gallery/diningtable.jpg', 
       title: 'Dining Area', 
       description: 'Perfect setting for family meals and gatherings', 
       category: 'interior',
@@ -121,7 +121,7 @@ const Gallery = () => {
     // Kitchen
     { 
       id: 14, 
-      src: '/sand-lake-lodge/images/gallery/kitchen.jpg', 
+      src: '/sand-lake-shores/images/gallery/kitchen.jpg', 
       title: 'Fully Equipped Kitchen', 
       description: 'Everything you need to prepare delicious meals', 
       category: 'kitchen',
@@ -129,7 +129,7 @@ const Gallery = () => {
     },
     { 
       id: 15, 
-      src: '/sand-lake-lodge/images/gallery/kitchen2.jpg', 
+      src: '/sand-lake-shores/images/gallery/kitchen2.jpg', 
       title: 'Kitchen with Views', 
       description: 'Cook with beautiful lake views', 
       category: 'kitchen',
@@ -137,7 +137,7 @@ const Gallery = () => {
     },
     { 
       id: 16, 
-      src: '/sand-lake-lodge/images/gallery/kitchenwine.jpg', 
+      src: '/sand-lake-shores/images/gallery/kitchenwine.jpg', 
       title: 'Kitchen Wine Area', 
       description: 'Perfect spot for wine storage and entertaining', 
       category: 'kitchen',
@@ -147,7 +147,7 @@ const Gallery = () => {
     // Bedrooms
     { 
       id: 17, 
-      src: '/sand-lake-lodge/images/gallery/master.jpg', 
+      src: '/sand-lake-shores/images/gallery/master.jpg', 
       title: 'Master Bedroom', 
       description: 'Comfortable master bedroom with lake views', 
       category: 'bedrooms',
@@ -155,7 +155,7 @@ const Gallery = () => {
     },
     { 
       id: 18, 
-      src: '/sand-lake-lodge/images/gallery/bedroom2.jpg', 
+      src: '/sand-lake-shores/images/gallery/bedroom2.jpg', 
       title: 'Guest Bedroom', 
       description: 'Cozy guest bedroom perfect for visitors', 
       category: 'bedrooms',
@@ -163,7 +163,7 @@ const Gallery = () => {
     },
     { 
       id: 19, 
-      src: '/sand-lake-lodge/images/gallery/bedroom3.jpg', 
+      src: '/sand-lake-shores/images/gallery/bedroom3.jpg', 
       title: 'Additional Bedroom', 
       description: 'Spacious bedroom for family or friends', 
       category: 'bedrooms',
@@ -171,7 +171,7 @@ const Gallery = () => {
     },
     { 
       id: 20, 
-      src: '/sand-lake-lodge/images/gallery/bunkbedroom.jpg', 
+      src: '/sand-lake-shores/images/gallery/bunkbedroom.jpg', 
       title: 'Bunk Bed Room', 
       description: 'Perfect for kids with fun bunk bed setup', 
       category: 'bedrooms',
@@ -179,7 +179,7 @@ const Gallery = () => {
     },
     { 
       id: 21, 
-      src: '/sand-lake-lodge/images/gallery/bunkbedroom2.jpg', 
+      src: '/sand-lake-shores/images/gallery/bunkbedroom2.jpg', 
       title: 'Bunk Room Details', 
       description: 'Cozy bunk room perfect for children', 
       category: 'bedrooms',
@@ -189,7 +189,7 @@ const Gallery = () => {
     // Bathrooms
     { 
       id: 22, 
-      src: '/sand-lake-lodge/images/gallery/bathroom.jpg', 
+      src: '/sand-lake-shores/images/gallery/bathroom.jpg', 
       title: 'Main Bathroom', 
       description: 'Clean and modern bathroom facilities', 
       category: 'bathrooms',
@@ -197,7 +197,7 @@ const Gallery = () => {
     },
     { 
       id: 23, 
-      src: '/sand-lake-lodge/images/gallery/bathroom2.jpg', 
+      src: '/sand-lake-shores/images/gallery/bathroom2.jpg', 
       title: 'Additional Bathroom', 
       description: 'Convenient bathroom for guests', 
       category: 'bathrooms',
@@ -205,7 +205,7 @@ const Gallery = () => {
     },
     { 
       id: 24, 
-      src: '/sand-lake-lodge/images/gallery/bathroom3.jpg', 
+      src: '/sand-lake-shores/images/gallery/bathroom3.jpg', 
       title: 'Bathroom Detail', 
       description: 'Well-appointed bathroom with all amenities', 
       category: 'bathrooms',
@@ -215,7 +215,7 @@ const Gallery = () => {
     // Playroom
     { 
       id: 25, 
-      src: '/sand-lake-lodge/images/gallery/playroom_1.jpg', 
+      src: '/sand-lake-shores/images/gallery/playroom_1.jpg', 
       title: 'Family Playroom', 
       description: 'Dedicated space for kids to play, read, and have fun', 
       category: 'playroom',
@@ -223,7 +223,7 @@ const Gallery = () => {
     },
     { 
       id: 26, 
-      src: '/sand-lake-lodge/images/gallery/playroom2.jpg', 
+      src: '/sand-lake-shores/images/gallery/playroom2.jpg', 
       title: 'Kids Entertainment Area', 
       description: 'Perfect room for children to enjoy their own space', 
       category: 'playroom',
@@ -234,7 +234,7 @@ const Gallery = () => {
   const videos = [
     {
       id: 27,
-      src: '/sand-lake-lodge/videos/patio_hottub.mp4',
+      src: '/sand-lake-shores/videos/patio_hottub.mp4',
       title: 'Patio & Hot Tub Tour',
       description: 'Relaxing outdoor spaces with hot tub and patio areas',
       category: 'exterior',
@@ -242,7 +242,7 @@ const Gallery = () => {
     },
     {
       id: 28,
-      src: '/sand-lake-lodge/videos/top_floor.mp4',
+      src: '/sand-lake-shores/videos/top_floor.mp4',
       title: 'Upper Floor Tour',
       description: 'Complete walkthrough of the cottage\'s upper level',
       category: 'interior',
@@ -250,7 +250,7 @@ const Gallery = () => {
     },
     {
       id: 29,
-      src: '/sand-lake-lodge/videos/bottom_floor.mp4',
+      src: '/sand-lake-shores/videos/bottom_floor.mp4',
       title: 'Main Floor Tour',
       description: 'Tour of the main living areas and ground floor',
       category: 'interior',
@@ -258,7 +258,7 @@ const Gallery = () => {
     },
     {
       id: 30,
-      src: '/sand-lake-lodge/videos/kitchen_living.mp4',
+      src: '/sand-lake-shores/videos/kitchen_living.mp4',
       title: 'Kitchen & Living Area',
       description: 'Detailed look at the kitchen and living spaces',
       category: 'kitchen',
@@ -266,7 +266,7 @@ const Gallery = () => {
     },
     {
       id: 31,
-      src: '/sand-lake-lodge/videos/backyard.mp4',
+      src: '/sand-lake-shores/videos/backyard.mp4',
       title: 'Backyard Tour',
       description: 'Beautiful backyard with lake access and outdoor amenities',
       category: 'exterior',
@@ -274,7 +274,7 @@ const Gallery = () => {
     },
     {
       id: 32,
-      src: '/sand-lake-lodge/videos/patio.mp4',
+      src: '/sand-lake-shores/videos/patio.mp4',
       title: 'Patio Overview',
       description: 'Comprehensive view of the outdoor patio and seating areas',
       category: 'exterior',
@@ -372,8 +372,8 @@ const Gallery = () => {
       <section className="relative py-12 md:py-16 flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
-            src="/sand-lake-lodge/images/hero/bonfire.jpg" 
-            alt="Sand Lake Lodge Gallery" 
+            src="/sand-lake-shores/images/hero/bonfire.jpg" 
+            alt="Sand Lake Shores Gallery" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
@@ -386,14 +386,14 @@ const Gallery = () => {
           >
                          <div className="mb-4 md:mb-6">
                <div className="inline-block p-2 md:p-3 bg-amber-50/60 backdrop-blur-sm rounded-full mb-3">
-                 <img src="/sand-lake-lodge/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
+                 <img src="/sand-lake-shores/cabin_icon.png" alt="Sand Lake Shores" className="w-6 h-6 md:w-8 md:h-8" />
                </div>
                              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-3 text-white drop-shadow-2xl leading-tight">
                 Gallery & Virtual Tours
               </h1>
-                              <p className="text-lg sm:text-xl md:text-2xl mb-4 text-amber-100 font-light drop-shadow-lg max-w-2xl md:max-w-3xl mx-auto leading-relaxed px-2">
-                 Discover the beauty of Sand Lake Lodge through photos and video tours
-               </p>
+              <p className="text-lg sm:text-xl md:text-2xl mb-4 text-amber-100 font-light drop-shadow-lg max-w-2xl md:max-w-3xl mx-auto leading-relaxed px-2">
+                Discover the beauty of Sand Lake Shores through photos and video tours
+              </p>
                <div className="w-16 md:w-20 h-0.5 md:h-1 bg-amber-400 mx-auto mb-4"></div>
              </div>
           </motion.div>

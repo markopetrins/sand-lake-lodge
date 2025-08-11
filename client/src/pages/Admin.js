@@ -469,7 +469,7 @@ const Admin = () => {
           >
             <div className="text-center mb-8">
               <div className="inline-block p-3 bg-amber-50 rounded-full mb-4">
-                <img src="/sand-lake-lodge/cabin_icon.png" alt="Sand Lake Lodge" className="w-8 h-8" />
+                <img src="/sand-lake-shores/cabin_icon.png" alt="Sand Lake Shores" className="w-8 h-8" />
               </div>
               <h1 className="text-2xl font-serif font-bold text-amber-900 mb-2">
                 Admin Login
@@ -536,7 +536,7 @@ const Admin = () => {
 
             <div className="mt-6 text-center">
               <p className="text-sm text-amber-600">
-                Secure access to Sand Lake Lodge booking management
+                Secure access to Sand Lake Shores booking management
               </p>
             </div>
           </motion.div>
@@ -562,8 +562,8 @@ const Admin = () => {
       <section className="relative py-12 md:py-16 flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
-            src="/sand-lake-lodge/images/hero/kitchen.jpg" 
-            alt="Sand Lake Lodge Admin" 
+            src="/sand-lake-shores/images/hero/kitchen.jpg" 
+            alt="Sand Lake Shores Admin" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
@@ -576,7 +576,7 @@ const Admin = () => {
           >
             <div className="mb-4 md:mb-6">
               <div className="inline-block p-2 md:p-3 bg-amber-50/60 backdrop-blur-sm rounded-full mb-3">
-                <img src="/sand-lake-lodge/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
+                <img src="/sand-lake-shores/cabin_icon.png" alt="Sand Lake Shores" className="w-8 h-8" />
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-3 text-white drop-shadow-2xl leading-tight">
                 Booking Management

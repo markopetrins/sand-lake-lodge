@@ -1,4 +1,4 @@
-# 🔒 Security Checklist for Sand Lake Lodge
+# 🔒 Security Checklist for Sand Lake Shores
 
 ## Pre-Deployment Security Checklist
 

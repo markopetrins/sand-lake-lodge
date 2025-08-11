@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/sand-lake-lodge/static/css/main.410e769b.css",
-    "main.js": "/sand-lake-lodge/static/js/main.58d5dbc5.js",
-    "index.html": "/sand-lake-lodge/index.html",
-    "main.410e769b.css.map": "/sand-lake-lodge/static/css/main.410e769b.css.map",
-    "main.58d5dbc5.js.map": "/sand-lake-lodge/static/js/main.58d5dbc5.js.map"
+    "main.css": "/sand-lake-shores/static/css/main.410e769b.css",
+    "main.js": "/sand-lake-shores/static/js/main.58d5dbc5.js",
+    "index.html": "/sand-lake-shores/index.html",
+    "main.410e769b.css.map": "/sand-lake-shores/static/css/main.410e769b.css.map",
+    "main.58d5dbc5.js.map": "/sand-lake-shores/static/js/main.58d5dbc5.js.map"
   },
   "entrypoints": [
     "static/css/main.410e769b.css",

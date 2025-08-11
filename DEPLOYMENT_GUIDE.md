@@ -4,7 +4,7 @@
 
 ### 1. Create GitHub Repository
 1. Go to [GitHub](https://github.com) and create a new repository
-2. Name it `sand-lake-lodge` (or your preferred name)
+2. Name it `sand-lake-shores` (or your preferred name)
 3. Make it public (required for GitHub Pages)
 
 ### 2. Push Your Code
@@ -19,7 +19,7 @@ git remote add origin https://github.com/YOUR_USERNAME/kumas-cottage.git
 git add .
 
 # Commit changes
-git commit -m "Initial commit - Sand Lake Lodge website"
+git commit -m "Initial commit - Sand Lake Shores website"
 
 # Push to GitHub
 git push -u origin main

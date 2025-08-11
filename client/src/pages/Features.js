@@ -9,8 +9,8 @@ const Features = () => {
       <section className="relative py-12 md:py-16 flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
-            src="/sand-lake-lodge/images/hero/dock2.jpg" 
-            alt="Sand Lake Lodge" 
+            src="/sand-lake-shores/images/hero/dock2.jpg" 
+            alt="Sand Lake Shores" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
@@ -23,7 +23,7 @@ const Features = () => {
           >
             <div className="mb-4 md:mb-6">
               <div className="inline-block p-2 md:p-3 bg-amber-50/60 backdrop-blur-sm rounded-full mb-3">
-                <img src="/sand-lake-lodge/cabin_icon.png" alt="Sand Lake Lodge" className="w-6 h-6 md:w-8 md:h-8" />
+                <img src="/sand-lake-shores/cabin_icon.png" alt="Sand Lake Shores" className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-3 text-white drop-shadow-2xl leading-tight">
                 Features & Amenities
@@ -68,8 +68,8 @@ const Features = () => {
             >
               <div className="relative mb-6">
                 <img 
-                  src="/sand-lake-lodge/images/hero/dock.jpg" 
-                  alt="Spacious patio at Sand Lake Lodge" 
+                  src="/sand-lake-shores/images/hero/dock.jpg" 
+                  alt="Spacious patio at Sand Lake Shores" 
                   className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-amber-900/30 to-transparent rounded-lg"></div>
@@ -91,8 +91,8 @@ const Features = () => {
             >
               <div className="relative mb-6">
                 <img 
-                  src="/sand-lake-lodge/images/page/hottub.jpg" 
-                  alt="Relaxing hot tub at Sand Lake Lodge" 
+                  src="/sand-lake-shores/images/page/hottub.jpg" 
+                  alt="Relaxing hot tub at Sand Lake Shores" 
                   className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-amber-900/30 to-transparent rounded-lg"></div>
@@ -121,7 +121,7 @@ const Features = () => {
               Explore Beyond the Lodge
             </h2>
             <p className="text-lg text-amber-700 max-w-2xl mx-auto">
-              Discover exciting local attractions and activities near Sand Lake Lodge
+              Discover exciting local attractions and activities near Sand Lake Shores
             </p>
           </motion.div>
 
@@ -136,7 +136,7 @@ const Features = () => {
               >
                 <div className="relative">
                                   <img 
-                  src="/sand-lake-lodge/images/page/atvtours.jpg" 
+                  src="/sand-lake-shores/images/page/atvtours.jpg" 
                   alt="ATV Tours" 
                   className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -166,7 +166,7 @@ const Features = () => {
               >
                 <div className="relative">
                                   <img 
-                  src="/sand-lake-lodge/images/page/antiquemarket.jpg" 
+                  src="/sand-lake-shores/images/page/antiquemarket.jpg" 
                   alt="Antique Market" 
                   className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                 />

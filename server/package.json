@@ -1,7 +1,7 @@
 {
-  "name": "sand-lake-lodge-server",
+  "name": "sand-lake-shores-server",
   "version": "1.0.0",
-  "description": "Backend server for Sand Lake Lodge booking system",
+  "description": "Backend server for Sand Lake Shores booking system",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
